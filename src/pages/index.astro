@@ -1,0 +1,41 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+const byYear = new Map<number, typeof posts>();
+for (const post of posts) {
+  const y = post.data.date.getFullYear();
+  if (!byYear.has(y)) byYear.set(y, []);
+  byYear.get(y)!.push(post);
+}
+const years = Array.from(byYear.keys()).sort((a, b) => b - a);
+
+const fmtMD = (d: Date) =>
+  `${String(d.getMonth() + 1).padStart(2, '0')}.${String(d.getDate()).padStart(2, '0')}`;
+---
+
+<BaseLayout title="andrew doan">
+  <div class="archive">
+    {
+      years.map((year) => (
+        <section class="year-group">
+          <h2 class="year-label">{year}</h2>
+          <ul class="post-list">
+            {byYear.get(year)!.map((post) => (
+              <li class="post-item">
+                <a href={`/blog/${post.id}/`} class="post-link">
+                  {post.data.title}
+                </a>
+                <span class="post-date">{fmtMD(post.data.date)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>

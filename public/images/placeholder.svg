@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-label="Placeholder image">
+  <rect width="800" height="450" fill="#1a1a1a"/>
+  <g fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="1.5">
+    <line x1="0" y1="0" x2="800" y2="450"/>
+    <line x1="800" y1="0" x2="0" y2="450"/>
+    <rect x="0.75" y="0.75" width="798.5" height="448.5"/>
+  </g>
+  <text x="400" y="225" text-anchor="middle" dominant-baseline="middle"
+        fill="rgba(255,255,255,0.5)" font-family="ui-sans-serif, system-ui, sans-serif"
+        font-size="22" font-weight="500" letter-spacing="0.05em">
+    PLACEHOLDER · 800 × 450
+  </text>
+</svg>
