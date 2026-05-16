@@ -23,7 +23,7 @@ Our team sits above individual vehicle teams — we're not designing for one veh
 
 And so before I ever open Figma, I'm doing the work of figuring out what we're actually trying to solve. What does the operator _actually_ need in that moment? Where does the mental model break? Which part of this complex system is producing the most cognitive load?
 
-Problem decomposition isn't a phase of my process. It's most of the job.
+**Problem decomposition isn't a phase of my process. It's most of the job.**
 
 ---
 
@@ -59,7 +59,7 @@ So I push where I can.
 
 Within work, I advocate for polish in the places there's space for it. When a feature has breathing room, I'll spend it on visual refinement — not because anyone asked, but because I think it's part of the job, even if it's not the loudest priority. We are the only designers here; if we don't sweat the pixels, no one will. I've learned to find the moments where craft is possible and not let them slip by.
 
-Outside of work is a different story. I shoot on film. I make travel zines. I dance. I build little experiments just to see what happens — not for production, not for a portfolio, just to play. Some of the most useful design thinking I've done has happened when I wasn't officially doing design at all -- serendipitous moments that refine my taste. 
+Outside of work is a different story. I shoot on film. I make travel zines. I dance. I build little experiments just to see what happens — not for production, not for a portfolio, just to play. **Some of the most useful design thinking I've done has happened when I wasn't officially doing design at all -- serendipitous moments that refine my taste.**
 
 ---
 
