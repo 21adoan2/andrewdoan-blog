@@ -1,3 +1,10 @@
+---
+title: "9-month learnings at Anduril"
+author: "Andrew Doan"
+date: "2025-05-16"
+retrieved: "2025-05-16"
+---
+
 There's a version of design work where the hardest decision you make on any given day is whether a button should be filled or outlined. Whether the corner radius feels right. Whether this shade of blue carries enough weight.
 
 I don't do that work.

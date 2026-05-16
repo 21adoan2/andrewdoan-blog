@@ -1,3 +1,9 @@
+---
+title: "When you should research organically"
+author: "Andrew Doan"
+date: "2025-05-16"
+retrieved: "2025-05-16"
+---
 
 I went into this quarter with a plan.
 
@@ -43,4 +49,4 @@ We still want the infrastructure, eventually. Slack integrations, insight reposi
 
 But this quarter taught me that the precondition for any of that is a culture that believes research is worth doing. And you don't build that culture with a form. You build it by showing up, adding value, and making it obvious — through repetition — that when your team is in the room, the product gets better.
 
-There's no one process fits all for research. Research in a way that fits your team's needs and meets users where they are. 
+There's no one-process-fits-all for research. Research in a way that fits your team's needs and meets users where they are. 
