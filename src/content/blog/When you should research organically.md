@@ -1,8 +1,8 @@
 ---
 title: "When you should research organically"
 author: "Andrew Doan"
-date: "2025-05-16"
-retrieved: "2025-05-16"
+date: "2026-05-16"
+retrieved: "2026-05-16"
 ---
 
 I went into this quarter with a plan.
