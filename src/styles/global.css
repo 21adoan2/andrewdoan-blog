@@ -18,6 +18,10 @@ p, h1, h2, h3 { overflow-wrap: break-word; }
   --width: clamp(20ch, 90vw, 44vw);
   --border: 1.5px;
   --radius: calc(var(--cap-height) / 3);
+
+  /* Font stacks: try custom font first, then a high-quality system fallback */
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* LIGHT THEME */
@@ -49,7 +53,8 @@ html {
 body {
   font-size: calc(var(--cap-height) / 1 * var(--cap-ratio));
   line-height: 1.5;
-  font-family: "Geist Medium", monospace, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Inter", var(--font-sans);
+  font-weight: 500;
   font-feature-settings: 'kern' 1, 'liga' 1, 'calt' 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -79,7 +84,7 @@ body {
 }
 .menu .spacer { flex-grow: 1; }
 .site-title {
-  font-family: "Soopafresh", sans-serif;
+  font-family: "Inter", var(--font-sans);
   font-weight: 600;
   font-size: var(--font-small);
   color: var(--text);
@@ -136,7 +141,7 @@ h1, h2, h3 {
 h1, h2, h3 {
   margin-top: calc(var(--gap) * 1.5);
   margin-bottom: calc(var(--gap) * 1);
-  font-family: "Manifont Grotesk", sans-serif;
+  font-family: "Inter", var(--font-sans);
 }
 h1 { font-size: clamp(1.15rem, 1.5vw + 0.9rem, 1.4em); }
 h2 { font-size: clamp(1.05rem, 1vw + 0.85rem, 1.15em); }
@@ -151,12 +156,12 @@ h1 + h2, h2 + h3 { margin-top: 0; }
 .post-meta {
   color: var(--gray-text);
   font-size: var(--font-small);
-  font-family: 'Geist Mono Medium', monospace, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Geist Mono', var(--font-mono);
 }
 .date {
   color: var(--gray-text);
   font-size: var(--font-small);
-  font-family: 'Geist Mono Medium', monospace, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Geist Mono', var(--font-mono);
 }
 
 /* LINKS */
@@ -204,7 +209,7 @@ blockquote p {
 
 /* CODE */
 pre, code {
-  font-family: 'Geist Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-family: 'Geist Mono', var(--font-mono);
 }
 code {
   font-style: normal;
@@ -308,15 +313,20 @@ hr {
   font-size: 1.15em;
   font-weight: 500;
   line-height: 1.2;
-  border-bottom: var(--border) solid var(--gray-line);
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration-color: var(--gray-line);
+  text-decoration-thickness: var(--border);
+  text-underline-offset: 0.18em;
+  transition: text-decoration-color 120ms ease, color 120ms ease;
 }
-.post-link:hover { border-color: var(--text); }
+.post-link:hover { text-decoration-color: var(--text); }
 
 .post-date {
   font-size: var(--font-small);
   color: var(--gray-text);
   white-space: nowrap;
-  font-family: 'Geist Mono Medium', monospace, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Geist Mono', var(--font-mono);
 }
 
 /* FOOTER */
@@ -329,6 +339,12 @@ hr {
 
 /* MOBILE LAYOUT (typography is fluid globally; this block is layout only) */
 @media (max-width: 640px) {
+  /* Near-full-width content with ~16px gutters on each side */
+  :root { --width: calc(100vw - 32px); }
+  .menu,
+  .footer { width: var(--width); }
+  .content > * { width: var(--width); max-width: var(--width); }
+
   .menu {
     flex-direction: row;
     align-items: center;
