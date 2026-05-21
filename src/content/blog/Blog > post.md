@@ -31,10 +31,6 @@ The people who care will always find the things they care about. That's how the 
 
 ---
 
-Medium wants you to write for Medium readers. Substack wants you to write for your subscribers. A personal blog expects nothing from you.
-
-That's where the voice comes from. Not from editorial guidelines or platform incentives or the implicit pressure of watching a follower count tick up. From the absence of all that. From sitting down and writing something because you thought it, and the web is where you put things you think.
-
 Kottke had it right. Putting it anywhere else — any place that makes you feel the audience first, the thought second — does seem kind of absurd.
 
 The blog was never the primitive version of what we have now. It might've been the honest one.

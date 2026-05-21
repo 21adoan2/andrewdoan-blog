@@ -17,7 +17,7 @@ That context shapes everything.
 
 ## 1. Problems are almost never what they look like at first
 
-The first thing Anduril taught me is that the problem you're handed and the problem you need to solve are rarely the same thing.
+The problem you're handed and the problem you need to solve are rarely the same thing.
 
 Our team sits above individual vehicle teams — we're not designing for one vehicle, we're designing for all of them, plus the downstream operators who use these systems in the field. That means "the user" is never a monolith. I have to build a real picture of who each of those people are, what they care about, where they conflict, and where their needs diverge. That's not a UX challenge — it's almost anthropological.
 
@@ -41,15 +41,13 @@ The muscle I've built here isn't just "how to run a usability study." It's how t
 
 ## 3. What I don't get to do as much
 
-Here's the honest part.
-
 The things that make users _feel_ something — the micro-interactions, the motion, the icon that's been debated for three meetings because getting it right matters — that's not the center of gravity at Anduril. We're optimizing for clarity and correctness under pressure, not for delight or emotional resonance. Those are real constraints, and they make sense for the context.
 
 But I notice the gap.
 
 I can ship a flow that's well-researched, logically structured, and operationally sound. What I haven't had as many reps at is the fine-grained, taste-level craft decisions — the ones where the answer isn't "does it work" but "does it _feel right._" Typography debates. Motion curves. The texture of a hover state.
 
-I'm not pretending those things don't matter to me. They do. A lot.
+I'm not pretending those things don't matter to me. They do.
 
 ---
 
