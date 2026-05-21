@@ -15,7 +15,7 @@ p, h1, h2, h3 { overflow-wrap: break-word; }
   --gap: calc(var(--cap-height) * 2);
   --font-smaller: calc(var(--cap-height) * 11 / 12 * var(--cap-ratio));
   --font-small: calc(var(--cap-height) * 10 / 12 * var(--cap-ratio));
-  --width: 44vw;
+  --width: clamp(20ch, 90vw, 44vw);
   --border: 1.5px;
   --radius: calc(var(--cap-height) / 3);
 }
@@ -39,11 +39,8 @@ p, h1, h2, h3 { overflow-wrap: break-word; }
   --gray-bg: rgba(243, 238, 223, 0.08);
 }
 
-@media (max-device-width: 480px) {
-  :root { --cap-height: calc(1rem * 18 / 16); }
-}
-
 html {
+  font-size: clamp(15px, 0.5vw + 14px, 17px);
   -moz-text-size-adjust: none;
   -webkit-text-size-adjust: none;
   text-size-adjust: none;
@@ -135,15 +132,15 @@ h1, h2, h3 {
   line-height: 1.1;
   text-wrap: balance;
 }
-.title { font-size: 2.5em; margin: 0 0 var(--gap) 0; }
-h1, h2, h3 { 
-  margin-top: calc(var(--gap) * 1.5); 
-  margin-bottom: calc(var(--gap) * 1); 
+.title { font-size: clamp(1.5rem, 4.5vw + 0.5rem, 2.5em); margin: 0 0 var(--gap) 0; }
+h1, h2, h3 {
+  margin-top: calc(var(--gap) * 1.5);
+  margin-bottom: calc(var(--gap) * 1);
   font-family: "Manifont Grotesk", sans-serif;
 }
-h1 { font-size: 1.4em; }
-h2 { font-size: 1.15em; }
-h3 { font-size: 1.00em; }
+h1 { font-size: clamp(1.15rem, 1.5vw + 0.9rem, 1.4em); }
+h2 { font-size: clamp(1.05rem, 1vw + 0.85rem, 1.15em); }
+h3 { font-size: clamp(1rem, 0.5vw + 0.9rem, 1.05em); }
 h1 + h2, h2 + h3 { margin-top: 0; }
 .title + .post-meta { 
   margin-top: calc(0px - var(--gap));
@@ -220,7 +217,7 @@ h1 > code, h2 > code, h3 > code, .title > code { font: inherit; }
 
 .content > pre,
 .content pre {
-  max-width: calc(var(--width) + 60px);
+  max-width: min(calc(var(--width) + 60px), 100%);
   background: var(--gray-bg);
   margin: var(--gap) 0;
   padding: 16px 30px 14px;
@@ -328,4 +325,25 @@ hr {
   color: var(--gray-text);
   font-size: var(--font-small);
   text-align: left;
+}
+
+/* MOBILE LAYOUT (typography is fluid globally; this block is layout only) */
+@media (max-width: 640px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .content > pre,
+  .content pre {
+    max-width: 100%;
+    padding: 12px 16px;
+    overflow-x: auto;
+  }
+
+  .post-item {
+    flex-wrap: wrap;
+    gap: 0.25em 0.75em;
+  }
 }
