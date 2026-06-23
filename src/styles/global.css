@@ -177,7 +177,7 @@ a:hover {
 }
 
 /* STRONG / EM */
-strong { font-weight: 600; }
+strong { font-weight: 700; }
 em { font-style: italic; }
 
 /* LISTS */
@@ -313,14 +313,9 @@ hr {
   font-size: 1.15em;
   font-weight: 500;
   line-height: 1.2;
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration-color: var(--gray-line);
-  text-decoration-thickness: var(--border);
-  text-underline-offset: 0.18em;
-  transition: text-decoration-color 120ms ease, color 120ms ease;
+  border-bottom: var(--border) solid var(--gray-line);
 }
-.post-link:hover { text-decoration-color: var(--text); }
+.post-link:hover { border-color: var(--text); }
 
 .post-date {
   font-size: var(--font-small);
