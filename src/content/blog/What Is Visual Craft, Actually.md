@@ -25,14 +25,14 @@ But sometimes, rationales conflict. Two defensible choices can point in opposite
 
 When that happens, user experience wins. Which decision is best for the user? 
 
-Everything below that is taste and testing. You show work, ship it, and learn from observing the outcomes. And slowly, that feedback becomes the taste you're building, an instinct you're accumulating one rep at a time.
+Everything below that is taste and testing. You show work, ship it, and learn from observing the outcomes. And slowly, that feedback becomes the taste you're building, an instinct you build one rep at a time.
 
 ## Some tangible ways to improve craft
 
 A few things have actually moved the needle for me:
 
-- Iterate more. Do  "a dozen more iterations" exercise, even when you think you are already done, and react to each. Think of the rationales for why some stand out more than others.
-- Asking other designers how something _feels_ — not what they'd change, just how it lands. Jamming on visuals specifically, not the whole problem.
+- Iterate more. Do  "a dozen more iterations," even when you think you are already done. Naturally, some will stand out more than others; answering why is the key to growth.
+- Asking other designers how something _feels_. Jamming on visuals specifically, not the whole problem.
 - Remembering that visual design is present in every project, even the unglamorous ones, and treating that as an opportunity instead of an afterthought.
 - **Ask yourself "why" on every visual decision, even the small ones. Especially the small ones.**
 
@@ -48,6 +48,4 @@ Now I do. I can look at old work and articulate exactly what's off — the hiera
 
 If I strip away the principles and the rationale-chasing, here's what I think visual craft really is: it's storytelling.
 
-Every visual decision is a narrative choice. The whole discipline is just an elaborate way of asking: _what am I trying to make someone understand and feel, and does every choice on the screen serve that?_
-
-The designers whose work stops me aren't the ones with the best technique or most flair. They're the ones whose interfaces tell a coherent story — where everything on the screen tells the truth about what it's for. That's craft.
+Every visual decision is intentional. _What am I trying to make someone understand and feel, and does every choice on the screen serve that?_ That's craft.
